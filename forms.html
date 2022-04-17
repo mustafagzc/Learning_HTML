@@ -1,0 +1,58 @@
+<form action="register.php">
+    <div>
+        <label for="name">Adınız</label>
+        <input type="text"  id="name">
+    </div>
+    <hr>
+    <div>
+        <label for="surname">Soyad</label>
+        <input type="text" id="name">
+    </div>
+    <hr>
+    <div>
+      <p><label for="intro">Kendini Anlat</p></label>
+        <textarea name="" id="intro" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <!--3 inputa da aynı name özelliği vererek aynı grup altında olduklarını belli etmiş olduk böylelikle  radio  buttona basınca sadece bir tanesini seçecektir.-->
+        <p>En sevdiğin programlama dili hangisidir ?</p>
+        <input type="radio" id="html" name="programlama dili">
+        <label for="html">HTML</label>
+
+        <input type="radio" id="css" name="programlama dili">
+        <label for="css">CSS</label>
+
+        <input type="radio"  id="javascript" name="programlama dili">
+        <label for="javascript">javascript</label>
+
+    </div>
+
+    <div>
+        <!--  3 inputa da aynı name özelliği vererek aynı grup altında olduklarını belli etmiş olduk böylelikle  radio  buttona basınca sadece bir tanesini seçecektir.-->
+        <!--labelda ki for değeri ile inputda ki id değeri aynı olunca text'e dahi tıklayınca seçim yapacaktır.-->
+        <p>En sevdiğin programlama dili hangisidir ?</p>
+        <input type="checkbox" id="html1" name="programlama dili">
+        <label for="html1">HTML</label>
+
+        <input type="checkbox" id="css1" name="programlama dili">
+        <label for="css1">CSS</label>
+
+        <input type="checkbox"  id="javascript1" name="programlama dili">
+        <label for="javascript1">javascript</label>
+
+    </div>
+
+    <div>
+        <label for="cities">Şehir</label>
+        <select name="" id="cities">
+            <option value="41">Kocaeli</option>
+            <option value="34">İstanbul</option>
+        </select>
+    </div>
+    <div>
+        <label for="eposta">Email</label>
+        <input type="email" id="eposta">
+    </div>
+<hr>
+    <button type="submit"> GÖNDER </button>
+</form>
